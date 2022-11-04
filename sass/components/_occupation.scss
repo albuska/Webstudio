@@ -1,14 +1,22 @@
 .occupation {
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {     
+      display: none;  
+      } 
   }
   
   .occupation__title {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      }
   }
   
   .occupation__list {
@@ -20,7 +28,7 @@
     position: relative;
   }
   
-  .occupation__bottom {
+  .occupation__button {
     position: absolute;
     width: 100%;
     top: 224px;

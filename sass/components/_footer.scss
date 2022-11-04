@@ -5,10 +5,17 @@
   }
   
   .footer__overlay {
-    display: flex;
-    align-items: baseline;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;  
+      }
+
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+    }
   }
-  
+
   .logo--down {
     color: var(--primary-bgc);
   }
@@ -32,17 +39,28 @@
   }
   
   .address__tel {
+    @media screen and (max-width: 767px) {
+      justify-content: center; 
+      }
     display: inline-block;
     display: flex;
     margin-top: 9px;
   }
   
   .address__contacts {
+    @media screen and (max-width: 767px) {
+      justify-content: center; 
+      }
     color: rgba(255, 255, 255, 0.6);
   }
   
   .social-networks {
-    margin-left: 70px;
+    @media screen and (max-width: 767px) {
+      padding: 60px 0; 
+      }
+    @include desktop {
+      margin-left: 70px;  
+    } 
   }
   
   .social-networks__title {
@@ -55,6 +73,9 @@
   }
   
   .social-networks__list {
+    @media screen and (max-width: 767px) {
+      justify-content: center; 
+      }
     display: flex;
     gap: 10px;
   }
@@ -72,8 +93,10 @@
   }
   
   .form__overlay {
-    display: flex;
-    gap: 12px;
+    @include desktop {
+      display: flex;
+      gap: 12px;
+    }
   }
   
   .form__input {
@@ -99,6 +122,13 @@
     justify-content: center;
     align-items: center;
     min-width: 200px;
+
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+      }
+    @media screen and (max-width: 1199px) {
+        margin-top: 20px;
+        }
   }
   
   .form__icon {
