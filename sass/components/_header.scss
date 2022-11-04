@@ -30,6 +30,47 @@
       display: flex;
       }
   }
+
+  .menu-open-btn {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+   
+     @include tablet {
+       display: none;   
+     }
+   }
+
+   .menu-close-btn {
+    @media screen and (max-width: 480px) {
+    
+      margin-left: auto;
+      border: none;
+      background-color: transparent;   
+    }
+    
+   }
+
+   .nav-contacts-menu {
+    position: fixed;
+    top: 0;
+    width: 480px;
+    height: 100%;
+    background-color: var(--primary-bgc);
+    // padding: 21px 25px 48px 40px;
+    z-index: 1;
+    // > .container {
+    //   height: 100%;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    //   overflow: auto;
+    }
+  
+    // @include tablet {
+    //   display: none;
+    // }
+
   
   .nav__link {
     font-weight: 500;
