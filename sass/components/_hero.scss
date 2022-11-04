@@ -33,6 +33,10 @@
     // max-width: 696px;
     margin: 0 auto;
 
+    @media screen and (max-width: 1199px) {
+     width: 360px; 
+    }
+
     @include desktop {
       // min-width: 696px;
       font-size: 44px;

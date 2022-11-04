@@ -233,6 +233,11 @@ img {
   color: var(--primary-bgc);
   margin: 0 auto;
 }
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
