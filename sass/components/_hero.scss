@@ -9,17 +9,19 @@
     background-position: center;
     text-align: center;
     padding: 118px 0;
-//     @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//     background-image: var(--bg-gradient),
-//     url(../images/bg-mobile-2x.jpg);
-// }
+    @include retina {
+    background-image: var(--bg-gradient),
+    url(../images/bg-mobile-2x.jpg);
+}
 
     @include tablet {
-    //  width: 768px; 
+     width: 768px; 
      background-image: var(--bg-gradient),
       url(../images/bg-tablet.jpg);
+      @include retina {
+    background-image: var(--bg-gradient),
+    url(../images/bg-tablet-2x.jpg);
+}
     } 
 
     @include desktop {
@@ -27,6 +29,10 @@
       padding: 200px 0;
       background-image: var(--bg-gradient),
       url(../images/bg-desktop.jpg);
+      @include retina {
+    background-image: var(--bg-gradient),
+    url(../images/bg-desktop-2x.jpg);
+}
     } 
   }
   
