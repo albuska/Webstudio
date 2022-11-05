@@ -167,15 +167,24 @@
           <h2 class="occupation__title">Чим ми займаємося</h2>
         <ul class="list link occupation__list">
           <li class="occupation__link">
-            <img src="./images/main/box1.jpg" alt="Друк-на-клавіатура" width="370" />
+            <img
+            srcset="./images/main/box1.jpg 1x, 
+                    ./images/main/box1-2x.jpg 2x"
+            src="./images/main/box1.jpg" alt="Друк-на-клавіатура" width="370" />
             <button type="button" class="occupation__button">Десктопні додатки</button>
           </li>
           <li class="occupation__link">
-            <img src="./images/main/box2.jpg" alt="Телефон-в-руці" width="370" />
+            <img
+            srcset="./images/main/box2.jpg 1x, 
+                    ./images/main/box2-2x.jpg 2x"
+            src="./images/main/box2.jpg" alt="Телефон-в-руці" width="370" />
             <button type="button" class="occupation__button">Мобільні додатки</button>
           </li>
           <li class="occupation__link">
-            <img src="./images/main/box3.jpg" alt="Зображення-на-планшеті" width="370" />
+            <img
+            srcset="./images/main/box3.jpg 1x, 
+                    ./images/main/box3-2x.jpg 2x"
+            src="./images/main/box3.jpg" alt="Зображення-на-планшеті" width="370" />
             <button type="button" class="occupation__button">Дизайнерські рішення</button>
           </li> 
         </ul>
@@ -186,11 +195,27 @@
           <h2 class="occupation__title">Наша команда</h2>
           <ul class="list link team__list">
             <li class="team__item">
+              <picture>
+                <source 
+                srcset="./images/main/img1.jpg 1x, 
+                ./images/main/img1-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source 
+                srcset="./images/main/img1-tab.jpg 1x, 
+                ./images/main/img1-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source 
+                srcset="./images/main/img1.jpg 1x, 
+                ./images/main/img1-2x.jpg 2x"
+                media="(max-width: 767px)">
               <img
+                srcset="./images/main/img1-mob.jpg 1x, 
+                        ./images/main/img1-mob-2x.jpg 2x"
                 src="./images/main/img1.jpg"
                 alt="Ігор Дем'яненко" 
-                width="270" class="team__photo"
+                width="450" class="team__photo"
               />
+            </picture>
             <div class="team__overlay">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -232,11 +257,24 @@
            
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source srcset="./images/main/img2.jpg 1x, 
+               ./images/main/img2-2x.jpg 2x"
+               media="(min-width: 1200px)">
+               <source srcset="./images/main/img2-tab.jpg 1x, 
+               ./images/main/img2-tab-2x.jpg 2x"
+               media="(min-width: 768px)">
+               <source srcset="./images/main/img2-mob.jpg 1x, 
+               ./images/main/img2-mob-2x.jpg 2x"
+               media="(max-width: 767px)">
+               <img
+                srcset="./images/main/img2.jpg 1x, 
+                        ./images/main/img2-2x.jpg 2x"
                 src="./images/main/img2.jpg"
                 alt="Ольга Рєпіна"
-                width="270" class="team__photo"
+                width="450" class="team__photo"
               />
+              </picture>
               <div class="team__overlay">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -277,11 +315,27 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source 
+                srcset="./images/main/img3.jpg 1x, 
+                ./images/main/img3-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source 
+                srcset="./images/main/img3-tab.jpg 1x, 
+                ./images/main/img3-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source 
+                srcset="./images/main/img3-mob.jpg 1x, 
+                ./images/main/img3-mob-2x.jpg 2x"
+                media="(max-width: 767px)"> 
+                <img
+                srcset="./images/main/img3.jpg 1x, 
+                        ./images/main/img3-2x.jpg 2x"
                 src="./images/main/img3.jpg"
                 alt="Микола Тарасов"
-                width="270" class="team__photo"
+                width="450" class="team__photo"
               />
+              </picture>
               <div class="team__overlay">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -322,11 +376,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <picture>
+                <source srcset="./images/main/img4.jpg 1x, 
+                ./images/main/img4-2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <source 
+                srcset="./images/main/img4-tab.jpg 1x, 
+                ./images/main/img4-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source 
+                srcset="./images/main/img4-mob.jpg 1x, 
+                ./images/main/img4-mob-2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img
+                srcset="./images/main/img4.jpg 1x, 
+                        ./images/main/img4-2x.jpg 2x"
                 src="./images/main/img4.jpg"
                 alt="Михайло Єрмаков"
-                width="270" class="team__photo"
+                width="450" class="team__photo"
               />
+              </picture>
               <div class="team__overlay">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>

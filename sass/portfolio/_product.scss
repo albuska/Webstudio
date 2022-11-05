@@ -72,6 +72,10 @@
     position: relative;
     overflow: hidden;
   }
+
+  .product__thumb img {
+    width: 100%;
+  }
   
   .product__overlay {
     position: absolute;
