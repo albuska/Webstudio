@@ -3,23 +3,30 @@
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary-bgc);
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/bg.jpg);
+    background-image: var(--bg-gradient),
+      url(../images/bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     padding: 118px 0;
+//     @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//     background-image: var(--bg-gradient),
+//     url(../images/bg-mobile-2x.jpg);
+// }
 
     @include tablet {
-     width: 768px; 
+    //  width: 768px; 
+     background-image: var(--bg-gradient),
+      url(../images/bg-tablet.jpg);
     } 
 
     @include desktop {
-      width: 1200px;
+      width: 1600px;
       padding: 200px 0;
+      background-image: var(--bg-gradient),
+      url(../images/bg-desktop.jpg);
     } 
   }
   
@@ -32,8 +39,8 @@
     color: var(--primary-bgc);
     margin: 0 auto;
 
-    @media screen and (max-width: 1199px) {
-     width: 360px; 
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 360px; 
     }
 
     @include desktop {

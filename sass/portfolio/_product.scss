@@ -7,8 +7,10 @@
 }
 
 .product__item {
+
   @include tablet { 
-  width: calc((100% - 2 * 30px) / 2);
+    width: 354px;
+  // width: calc((100% - 2 * 30px) / 2);
   }
   @include desktop { 
     min-width: 370px;
@@ -31,13 +33,15 @@
     }
    }
 
-
-  
   .product__content {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+    }
 }
   
   .product__name {
