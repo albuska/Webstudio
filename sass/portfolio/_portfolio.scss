@@ -1,5 +1,9 @@
 .portfolio {
     padding: 94px 0;
+
+    @media screen and (max-width: 1199px) {
+      padding: 60px 0;
+      }
   }
   
   .portfolio__list {
@@ -7,8 +11,18 @@
     padding: 0;
     margin: 0;
     display: flex;
+    padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    width: 400px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @include tablet {
     justify-content: center;
     padding-bottom: 50px;
+  }
   }
   
   .portfolio__item {
@@ -16,7 +30,9 @@
   }
   
   .portfolio__list .portfolio__item + .portfolio__item {
-    margin-left: 8px;
+    @include tablet {
+      margin-left: 8px;
+    }
   }
   
   .portfolio__button {

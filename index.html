@@ -27,7 +27,7 @@
               >Web<span class="logo header__logo">Studio</span></a
             >
             <nav>
-            <ul class="list link nav__list">
+            <ul class="list link nav__list nav-secondary__list">
               <li class="nav__item">
                 <a href="./index.html" class="list link nav__link current">Студія</a>
               </li>
@@ -38,8 +38,8 @@
                 <a href="#" class="list link nav__link">Контакти</a></li>
             </ul>
           </nav>
-          <ul class="list link nav__list nav__list--left">
-            <li class="nav__item">
+          <ul class="list link nav__list nav-contact__list">
+            <li class="nav__item nav-contact__item">
               <a href="mailto:info@devstudio.com"
                 class="list link nav__link nav__link--contacts"
                 > <svg class="nav__icons" width="16" height="12">
@@ -47,7 +47,7 @@
                 </svg> 
                 info@devstudio.com</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav-contact__item">
               <a href="tel:+380961111111" class="list link nav__link nav__link--contacts"
                 >
                 <svg class="nav__icons" width="10" height="16">
@@ -57,13 +57,13 @@
               >
             </li>
           </ul>
-          <!-- <button type="button" class="menu-open-btn" data-menu-open>
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg width="24" height="16">
               <use href="./images/icomoon/icons.svg#icon-menu"></use>
             </svg>
-          </button> -->
+          </button>
       </div>
-      <!-- <div class="nav-contacts-menu is-hidden" data-menu>
+      <div class="nav-contacts-menu is-hidden" data-menu>
         <div class="container">
           <button type="button" class="menu-close-btn" data-menu-close>
             <svg width="19" height="19">
@@ -105,7 +105,7 @@
             <a class="link networks-menu__link" href="#">LinkedIn</a>
            </li>
           </ul>
-        </div> -->
+        </div>
     </header>
     <main>
       <section class="hero">
@@ -417,78 +417,79 @@
     </main>
     <footer class="footer">
       <div class="container footer__overlay">
-            <div class="footer-main__overlay">
-              <a href="./index.html" lang="en" class="logo list link"
-              >Web<span class="logo logo--down">Studio</span></a>
-            <address class="address__overlay">
-              <ul class="list link">
-                <li>
-                  <a
-                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="address__link list link"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
-                </li>
-                <li class="address__tel">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="list link address__link address__contacts"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="address__tel">
-                  <a
-                    href="tel:+380961111111"
-                    class="list link address__link address__contacts"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-            </div>
-         <div class="social-networks">
-            <p class="social-networks__title">приєднуйтесь</p>
-                <ul   class="list social-networks__list">
-                  <li class="networks__item">
-                    <a class="networks__link networks__link--gray" href="#">
-                      <svg class="networks__icons networks__icons--white" width="20" height="20">
-                        <use href="./images/icomoon/icons.svg#icon-instagram">
-                        </use>
-                      </svg>
-                    </a>
+            <div class="footer-tablet">
+              <div class="footer-main__overlay">
+                <a href="./index.html" lang="en" class="logo list link"
+                >Web<span class="logo logo--down">Studio</span></a>
+              <address class="address__overlay">
+                <ul class="list link">
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="address__link list link"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
                   </li>
-                  <li class="networks__item">
-                    <a class="networks__link networks__link--gray" href="#">
-                      <svg class="networks__icons networks__icons--white" width="20" height="20">
-                        <use href="./images/icomoon/icons.svg#icon-twitter">
-                        </use>
-                      </svg>
-                    </a>
+                  <li class="address__tel">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="list link address__link address__contacts"
+                      >info@devstudio.com</a
+                    >
                   </li>
-                  <li class="networks__item">
-                    <a class="networks__link networks__link--gray" href="#">
-                      <svg class="networks__icons networks__icons--white" width="20" height="20">
-                        <use href="./images/icomoon/icons.svg#icon-facebook">
-                        </use>
-                      </svg> 
-                    </a>
+                  <li class="address__tel">
+                    <a
+                      href="tel:+380961111111"
+                      class="list link address__link address__contacts"
+                      >+38 096 111 11 11</a
+                    >
                   </li>
-                  <li class="networks__item">
-                    <a class="networks__link networks__link--gray" href="#">
-                      <svg class="networks__icons networks__icons--white" width="20" height="20">
-                        <use href="./images/icomoon/icons.svg#icon-linkedin">
-                        </use>
-                      </svg> 
-                    </a>
-                  </li>  
                 </ul>
-         </div>
+              </address>
+              </div>
+           <div class="social-networks">
+              <p class="social-networks__title">приєднуйтесь</p>
+                  <ul   class="list social-networks__list">
+                    <li class="networks__item">
+                      <a class="networks__link networks__link--gray" href="#">
+                        <svg class="networks__icons networks__icons--white" width="20" height="20">
+                          <use href="./images/icomoon/icons.svg#icon-instagram">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="networks__item">
+                      <a class="networks__link networks__link--gray" href="#">
+                        <svg class="networks__icons networks__icons--white" width="20" height="20">
+                          <use href="./images/icomoon/icons.svg#icon-twitter">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="networks__item">
+                      <a class="networks__link networks__link--gray" href="#">
+                        <svg class="networks__icons networks__icons--white" width="20" height="20">
+                          <use href="./images/icomoon/icons.svg#icon-facebook">
+                          </use>
+                        </svg> 
+                      </a>
+                    </li>
+                    <li class="networks__item">
+                      <a class="networks__link networks__link--gray" href="#">
+                        <svg class="networks__icons networks__icons--white" width="20" height="20">
+                          <use href="./images/icomoon/icons.svg#icon-linkedin">
+                          </use>
+                        </svg> 
+                      </a>
+                    </li>  
+                  </ul>
+           </div>
+            </div>
           
             <form class="form">
-              <div>
-
+              <div class="form-tablel">
               <p class="social-networks__title">Підпишіться на розсилку</p>
            
                   <div class="form__overlay">

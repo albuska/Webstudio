@@ -12,12 +12,12 @@
     @include tablet {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       gap: 30px;
     }
     
     @include desktop {
      flex-wrap: nowrap; 
+     justify-content: space-between;
     }  
   }
   
@@ -33,7 +33,8 @@
       } 
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-     width: calc((100% - 2 * 30px) / 2);
+      width: 354px;
+    //  width: calc((100% - 2 * 30px) / 2);
         }
   }
 }
@@ -43,6 +44,10 @@
     max-width: 100%;
     height: auto;
     width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+        }
   }
   
   .team__overlay {
