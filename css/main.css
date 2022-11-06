@@ -365,12 +365,28 @@ img {
   background-image: var(--bg-gradient), url(../images/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 118px 0;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-gradient), url(../images/bg-mobile-2x.jpg);
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
