@@ -52,7 +52,11 @@
        display: none;   
      }
    }
-
+   .nav-contacts-menu {
+    @include tablet {
+      display: none;   
+    }
+  }
 
    .menu-close-btn {
     position: absolute;
