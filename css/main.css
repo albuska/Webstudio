@@ -350,7 +350,9 @@ img {
 }
 
 .hero {
-  width: 100vw;
+  max-width: 1600px;
+  min-width: 320px;
+  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-bgc);
@@ -367,7 +369,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: var(--bg-gradient), url(../images/bg-tablet.jpg);
   }
 }
@@ -378,7 +379,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
     padding: 200px 0;
     background-image: var(--bg-gradient), url(../images/bg-desktop.jpg);
   }
@@ -944,7 +944,7 @@ img {
 .modal__button {
   position: absolute;
   right: 8px;
-  margin-top: 8px;
+  top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -957,24 +957,12 @@ img {
 }
 
 .modal__close-icon {
+  position: absolute;
   display: block;
   fill: var(--logo-part-color);
 }
 .modal__close-icon:hover, .modal__close-icon:focus {
   fill: var(--accent-color);
-}
-
-.modal-form {
-  max-width: 430px;
-  max-height: 529px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
-}
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    width: 100%;
-  }
 }
 
 .modal-form__text {

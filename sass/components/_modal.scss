@@ -47,7 +47,7 @@
   .modal__button {
     position: absolute;
     right: 8px;
-    margin-top: 8px;
+    top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,7 @@
   }
   
   .modal__close-icon {
+    position: absolute;
     display: block;
     fill: var(--logo-part-color);
     &:hover,
@@ -69,14 +70,14 @@
   }
   
   .modal-form {
-    max-width: 430px;
-    max-height: 529px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px;
+    // max-width: 430px;
+    // max-height: 529px;
+    // margin-left: auto;
+    // margin-right: auto;
+   
 
     @include desktop {
-    width: 100%;
+    // width: 100%;
     }
   }
   

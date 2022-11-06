@@ -1,5 +1,7 @@
 .hero {
-    width: 100vw;
+    max-width: 1600px;
+    min-width: 320px;
+    min-height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--secondary-bgc);
@@ -14,8 +16,7 @@
     url(../images/bg-mobile-2x.jpg);
 }
 
-    @include tablet {
-     width: 768px; 
+    @include tablet { 
      background-image: var(--bg-gradient),
       url(../images/bg-tablet.jpg);
       @include retina {
@@ -25,7 +26,6 @@
     } 
 
     @include desktop {
-      width: 1600px;
       padding: 200px 0;
       background-image: var(--bg-gradient),
       url(../images/bg-desktop.jpg);
