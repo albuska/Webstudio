@@ -374,11 +374,6 @@ img {
     background-image: var(--bg-gradient), url(../images/bg-mobile-2x.jpg);
   }
 }
-@media screen and (max-width: 480px) {
-  .hero {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero {
     width: 768px;
